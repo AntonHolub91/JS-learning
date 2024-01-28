@@ -11,6 +11,8 @@ typeof null // "object"  (1)
 typeof function () {} // "function"  (2)
 
 
+
+
 //Оператор instance of - позволяет проверить, принадлежит ли объект указанному классу, с учётом наследования.
 
 class Rabbit {}
@@ -34,6 +36,10 @@ let arr = [1, 2, 3];
 console.log( arr instanceof Array ); // true
 console.log( arr instanceof Object ); // true
 
+
+
+
+
 // Оператор in - возвращает true, если свойство содержится в указанном объекте или в его цепочке прототипов
 
 let car = {
@@ -52,6 +58,8 @@ console.log('b' in array); // вернет false, т.к. првоерка нал
 console.log('length' in array); // вернет true, т.к. массив array имеет свойство length
 
 
+
+
 //Арифметические операторы
 1 + 2
 2 - 1
@@ -60,3 +68,16 @@ console.log('length' in array); // вернет true, т.к. массив array 
 9 % 4 // остаток от деления
 2 ** 3 // возведение в степень
 4 ** (1/2) // извлечение корня
+x = 10 // присваивание
+
+//сложение строк
+let string1 = 'Hello' + 'World'
+console.log(string1) //вернет HelloWorld
+let string2 = 1 + 'World' //если хотя бы один операнд является строкой, то второй будет также преобразован в строку
+console.log(string2) //вернет 1World
+let string3 = 2 + 2 + 'World'
+console.log(string3) //вернет 4World
+console.log('6' - '2') // вернет 4
+console.log(+'6') // унарный операнд + или - преобразует тип данных в число
+
+
