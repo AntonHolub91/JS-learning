@@ -24,12 +24,14 @@ console.log();
 
 //Логическое преобразование
 
-console.log(Boolean(1));//метод Number() явно преобразовывает тип данных в логический
-console.log(Boolean('qqq'));
-console.log(Boolean(0));
-console.log(Boolean(null));
-console.log(Boolean(undefined));
-console.log(Boolean('q' / 2));
-console.log(Boolean(''));
+//метод Number() явно преобразовывает тип данных в логический
+console.log(Boolean(1));// вернет true
+console.log(Boolean('qqq'));// вернет true
+console.log(Boolean(' '));// вернет true
+console.log(Boolean(0));// вернет false
+console.log(Boolean(null));// вернет false
+console.log(Boolean(undefined));// вернет false
+console.log(Boolean('q' / 2));// вернет false
+console.log(Boolean(''));// вернет false
 
 
